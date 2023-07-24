@@ -1,0 +1,322 @@
+
+.main-container{
+  margin-left: 150px;
+  color: #495057;
+  transition: margin-left 0.3s ease;
+  z-index: 1;
+}
+.main-container.expanded {
+  margin-left: 350px;
+}
+.container {
+  width: calc(280px - 5rem);
+  width: 350px;
+  height: 220px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 150px;
+  margin-top: 20px;
+  transition: margin-left 0.3s ease;
+  z-index: 1;
+}
+
+.tarjeta {
+  background-image: linear-gradient(#fff, #567246f1);
+  margin-top: 25px;
+  width: 350px;
+  height: 220px;
+  color: #222529;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  }
+  .dinero{
+    margin-top: 10px;
+    margin-bottom: -60px;
+  }
+  .misaldo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .numero {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+    margin-left: 90px;
+  }
+
+  .logo{
+    margin-top: 5px;
+    margin-bottom: -30px;
+    width: 45px;
+    margin-left: 250px;
+    box-shadow: 0 0 15px rgb(35 35 35 / 15%);
+    cursor: pointer;
+  }
+  .fecha-vencimiento{
+    margin-bottom: 25px;
+    margin-left: 60px;
+    margin-bottom: -3px;
+  }
+  .fecha{
+    margin-left: 60px;
+
+  }
+  
+  .ingresoTarjeta{
+    width: calc(100% - 5rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30.25px;
+    margin-left: 20px;
+    background-image: linear-gradient(#fff, #042c53);
+    width: 350px;
+    height: 220px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.col{
+  margin-left: -40px;
+  margin-top: -120px;
+  
+}
+  .EgresoTarjeta{
+    width: calc(100% - 5rem);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30.25px;
+    margin-left: 20px;
+    background-image: linear-gradient(#5d93daf1,#fff, #042c53);
+    width: 350px;
+    height: 220px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cards{
+  width: calc(100% - 5rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1.25rem;
+  
+
+  .head-menu-item {
+    .head-menu-item-btn {
+        font-size: 18px;
+        height: 42px;
+        width: 42px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        margin-left: 5px;
+        outline: 0;
+        color: #495057;
+    }
+
+    .head-menu-item-btn:hover {
+        background: #030303;
+        .menu-icon{
+            color: #699dfa;
+        }
+    }
+    .head-menu-item-btn:focus {
+        background: #eff2f3;
+        .menu-icon{
+            color: #699dfa;
+        }
+    }
+    .ingreso{
+      margin-left: 60px;
+      margin-top: -35px;
+      color: #222529;
+      z-index: 1;
+
+    }
+    .Engreso{
+      margin-left: 60px;
+      margin-top: -35px;
+      color: #222529;
+      z-index: 1;
+
+    }
+  }
+  .ingresoTar {
+    color: #111214;
+    margin-top: 30px;
+    margin-right: 350px;
+    margin-left: -50px;
+
+  }
+  .EgresoTar {
+    color: #111214;
+    margin-top: 30px;
+    margin-right: 350px;
+    margin-left: -50px;
+
+  }
+}
+
+.head-trimmed {
+  width: calc(100% - 15.5625rem);
+  margin-left: 16.5625rem;
+
+}
+
+.head-md-screen {
+  width: calc(100% - 5rem);
+  margin-left:5rem;
+}
+
+.container-card {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 300px;
+  margin-right: 500px;
+  margin-left: -300px;
+
+
+}
+
+.Balance { 
+  margin-top: 5px;
+  margin-bottom: -10px;
+  margin-right: 100px;
+  margin-left: -825px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.transaction-title {
+  margin-left: -190px;
+
+}
+.avatar-container {
+  margin-bottom: 20px;
+}
+.imagen {
+  border-radius: 20px;
+  
+}
+.text-avatar {
+  margin-left: 50px;
+  margin-top: -40px;
+  padding-right: 60px;
+}
+.amount {
+  margin-left: 140px;
+  margin-top: -35px;
+  
+}
+.fechas-transaccion{
+  margin-top: 10px;
+  margin-left: 13px;
+}
+
+
+.chart-wrapper {
+  margin-left: -1000px;
+  margin-right: 100px;
+  margin-top: 80px;
+  width: 600px;
+  height: 900px;
+}
+
+.horizontal-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 600px;
+  gap: 60px;
+  margin-left: 250px;
+}
+
+
+.horizontal-list li {
+  display: flex;
+  margin-left:30px;
+  gap: 70px;
+}
+
+.card-table {
+  background-color: #fff;
+  padding: 5px;
+  margin-left: 70px;
+
+  .table {
+    display: flex;
+    justify-content: space-between;
+    gap: 130px;
+    margin-left: 60px;
+  }
+  
+  tr {
+    margin-bottom: 5px;
+    padding: -50px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+
+  .botones button {
+    background-image: linear-gradient(#fff, #042c53);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .botones button:hover {
+    background-color: lightblue;
+    color: white;
+    font-weight: bold;
+  }
+
+}
+
+.data {
+  margin-top: 5px;
+}
+
+
+.styled-checkbox {
+  display: none;
+}
+
+.styled-checkbox + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.styled-checkbox:checked + label {
+  background-color: #3366ff;
+}
+
+.styled-checkbox + label:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline></svg>');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.styled-checkbox:checked + label:before {
+  opacity: 1;
+}
+

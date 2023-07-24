@@ -1,0 +1,36 @@
+const userService = require('./userService');
+
+const createUserControllerFn = async (req, res) =>
+{
+    try
+    {
+        console.log(req.body);
+        const status = await userService.createUserDBservice(req.body);
+        console.log(status);
+
+        if(status) {
+            res.send({ status: true, message: "usuario creado satisfactoriamente"});
+        } else {
+            res.send({ status: false, message: "Error al crear un usuario"});
+        }
+    } 
+    catch(error) { 
+        console.log(error);
+    }
+}
+
+const loginUserControllerFn = async (req, res) => {
+    try {
+        const result = await userService.loginUserDBService(req.body);
+        if (result.status) { 
+            res.send({ status: true, message: result.msg });
+        } else {
+            res.send({ status: false, message: result.msg });
+        }
+    } catch(error) {
+        console.log(error);
+        res.send({ status: false, message: error.msg });
+    }
+}
+
+module.exports = { createUserControllerFn, loginUserControllerFn };

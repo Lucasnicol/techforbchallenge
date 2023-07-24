@@ -1,0 +1,15 @@
+<button mat-icon-button style="float: right; margin: 5px;" matDialogClose>
+    <mat-icon>close</mat-icon>
+</button>
+
+<mat-dialog-content>
+    <header>Ingreso de plata</header>
+    <p><mat-form-field>
+        <input matInput placeholder="ingreso">
+    </mat-form-field></p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-raised-button color="primary"(click)="guardarValor()">Guardar</button>
+    <button mat-raised-button color="primary" matDialogClose>Cancelar</button>
+</mat-dialog-actions>
+

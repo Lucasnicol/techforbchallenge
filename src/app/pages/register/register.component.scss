@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px));
+}
+
+.card {
+  background: linear-gradient(to right, white 50%, rgb(2, 44, 58) 50%);
+  width: 700px;
+  height: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 16px 14px 20px #4935ff;
+  position: relative;
+}
+
+.background-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 50px 25px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40%;
+  margin-right: 70%;
+}
+
+.title-container {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: lightgray;
+}
+
+.brand {
+  color: blue;
+}
+
+.btn-primary {
+  border-radius: 5px;
+  color: blue;
+}
+
+.form-container {
+  background: none;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60%;
+  color: black;
+  margin-bottom: 10%;
+  margin-top: -12%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.form-container input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: #fff;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+  margin-bottom: 15px;
+}
+
+.form-container .lbl-nombre {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.form-container .lbl-nombre::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px; 
+  width: 100%; 
+  height: 3px;
+  background-color: #2ecece;
+  transition: all 0.3s ease;
+}
+
+.text-nombre {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #fff;
+  padding-top: 1px;
+}
+
+
+.form-container input::-moz-focus-inner + .lbl-nombre .text-nombre {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+.form-container input:valid + .lbl-nombre .text-nombre {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #2ecece;
+}
+
+.button {
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+  width: 38%;
+  height: 30px; 
+  border-radius: 10px;
+  background-color: #fff;
+  margin-left: 398px;
+  margin-top: -60px;
+}
+
+#nav{
+  display:none;
+}

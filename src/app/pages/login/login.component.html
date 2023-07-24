@@ -1,0 +1,27 @@
+<ng-container *ngIf="isLoginPage">
+  <div class="container">
+    <form class="card">
+      <div class="background-image-container"></div>
+      <div class="row">
+        <div class="col-sm-6 card-left">
+          <h2 class="title">Bienvenidos a <span class="brand">Unicomer</span></h2>
+        </div>
+        <div class="form-container">
+          <input type="text" [(ngModel)]="DNI" [ngModelOptions]="{standalone: true}" class="form-control" id="InputDNI" placeholder="DNI">
+          <label class="lbl-nombre"><span class="text-nombre">Tipo de Documento</span></label>
+          <input type="text" [(ngModel)]="NDNI" [ngModelOptions]="{standalone: true}" class="form-control" id="InputNDNI" placeholder="41262985">
+          <label class="lbl-nombre"><span class="text-nombre">Número de Documento</span></label>
+          <input type="text" [(ngModel)]="Clave" [ngModelOptions]="{standalone: true}" class="form-control" id="InputNDNI" placeholder="41262985">
+          <label class="lbl-nombre"><span class="text-nombre">Clave</span></label>
+          <div class="forms">
+          </div>
+        </div>
+        <button type="submit" class="button" (click)="login()">Ingresar</button>
+      </div>
+      <p class="registrarse">¿No tienes cuenta? <a href="/register">Regístrate aquí</a>.</p>
+    </form>
+  </div>
+</ng-container>
+
+  
+  

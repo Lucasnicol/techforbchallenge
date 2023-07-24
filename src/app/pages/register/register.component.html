@@ -1,0 +1,22 @@
+<div class="container">
+    <form class="card">
+        <div class="background-image-container"></div>
+            <div class="row">
+                <div class="col-sm-6 card-left">
+                    <h2 class="title">Registrarse a <span class="brand">Unicomer</span></h2>
+                </div>
+                <div class="form-container">
+                    <input type="text" [(ngModel)]="DNI" [ngModelOptions]="{standalone: true}" class="form-control"  id="stname" placeholder="DNI">
+                    <label class="lbl-nombre"><span class="text-nombre">Tipo de Documento</span></label>
+                    <input type="text" [(ngModel)]="NDNI" [ngModelOptions]="{standalone: true}" class="form-control" id="stlast" placeholder="41262985">
+                    <label class="lbl-nombre"><span class="text-nombre">Número de Documento</span></label>
+                    <input type="text" [(ngModel)]="Clave" [ngModelOptions]="{standalone: true}" class="form-control" id="stemail" placeholder="******************">
+                    <label class="lbl-nombre"><span class="text-nombre">Clave</span></label>
+                    <div class="forms">
+                    </div>
+                </div>
+                <button type="submit" class="button" (click)="save()">Guardar</button>
+            </div>
+        </form>
+    </div>
+       
