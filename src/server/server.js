@@ -4,7 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const routes = require('./route/routes');
 const mongoose = require('mongoose');
-const {userr} = require('./src/user/userModel')
+const {userr} = require('./user/userModel')
 
 const DB_URI = 'mongodb://localhost:27017/user'
 
