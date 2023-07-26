@@ -35,7 +35,7 @@ export class LoginComponent {
     console.log(this.NDNI);
     console.log(this.Clave);
 
-    this.http.post("http://localhost:3000/user/login",bodyData).subscribe((resultData: any) => {
+    this.http.post("https://techforb.fly.dev/user/login",bodyData).subscribe((resultData: any) => {
       console.log(resultData);
       if (resultData.status) {
         this.router.navigateByUrl('/dashboard');
@@ -45,7 +45,7 @@ export class LoginComponent {
       }
     });
 
-    this.http.get("http://localhost:3000/user/create").subscribe((resultData: any) => {
+    this.http.get("https://techforb.fly.dev/user/create").subscribe((resultData: any) => {
       console.log(resultData);
       if (resultData.status) {
         this.router.navigateByUrl('/Dashboard');
