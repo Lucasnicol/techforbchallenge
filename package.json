@@ -4,10 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "node src/server/server.js",
-    "build": "npm run build",
-    "options": {
-      "baseHref":"https://techforb.fly.dev/"
-    },
+    "build": "npm install",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
